@@ -64,23 +64,23 @@ const App = () => {
             <Route path="/user/:id/verify/:token" exact element={<Verify />} />
             <Route path="/cart" element={<AddToCart />} />
             <Route path="/payment" element={<AddToCart />} />
-            <Route path="/room" element={<AdminRoomScreen />} />
-            <Route path="/search/:keyword" element={<AdminRoomScreen />} />
-            <Route path="room?sort" element={<AdminRoomScreen />} />
+            {/* <Route path="/room" element={<AdminRoomScreen />} />
+            <Route path="/search/:keyword" element={<AdminRoomScreen />} /> */}
+            {/* <Route path="room?sort" element={<AdminRoomScreen />} />
             <Route path={`/:id/book/room`} element={<RoomBook />} />
             <Route path="/list/book/room" element={<RoomBookedList />} />
             <Route
               path="/room/book/:id/details"
               element={<RoomBookedDetails />}
-            />
-            <Route path="/list/myBooking" element={<BookingListClient />} />
-            <Route path="/contact" element={<ContactUs />} />
+            /> */}
+            {/* <Route path="/list/myBooking" element={<BookingListClient />} /> */}
+            {/* <Route path="/contact" element={<ContactUs />} />
             <Route path="/contact/list" element={<ContactUsListScreen />} />
             <Route path={`/:id/details/room`} element={<RoomDetails />} />
             <Route
               path={`/reply/review/:roomId/:reviewId`}
               element={<ReviewReply />}
-            />
+            /> */}
             <Route path="*" element={<PageNotFound />} />
           </Routes>
           {(user?.result?.role === 1) ? <></> : !user ? <Footer /> : user?.result?.role === 0 && <Footer />}

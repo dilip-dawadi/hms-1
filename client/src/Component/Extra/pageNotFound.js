@@ -24,7 +24,7 @@ const PageNotFound = () => {
                         fontWeight: 'bold',
                         letterSpacing: '3px',
                         display: "block"
-                    }}>Page Not Found</div>
+                    }}>Page Comming Soon...</div>
                     <Button onClick={() => navigate('/home')} style={{
                         position: "absolute",
                         top: '10%',
