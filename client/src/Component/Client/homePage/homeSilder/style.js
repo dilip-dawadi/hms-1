@@ -36,9 +36,9 @@ export default makeStyles((theme) => ({
             textAlign: 'center',
         },
         [theme.breakpoints.down('sm')]: {
-            top: '60%',
+            top: '50%',
             left: '50%',
-            transform: 'translate(-50%, -60%)',
+            transform: 'translate(-50%, -50%)',
             fontSize: '1.4rem',
             width: '100%',
             textAlign: 'center',
