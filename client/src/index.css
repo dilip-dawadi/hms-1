@@ -1,0 +1,22 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif !important;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background-color: #adadad;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #00434d;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #166b50;
+}
