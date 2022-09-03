@@ -32,11 +32,11 @@ app.get("/", (req, res) => {
 });
 
 // Using morgan for dev dependancy
-if (process.env.NODE_ENV === "development") {
-  app.use(morgan("dev"));
-}
+// if (process.env.NODE_ENV === "development") {
+app.use();
+// }
 
-// Setting up own error middleware
+// Setting
 app.use(notFound);
 app.use(errorHandler);
 
