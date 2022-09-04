@@ -43,15 +43,15 @@ const FoodHeaderPage = ({ foodLength }) => {
     return (
         <>
             <div className={classes.design}>
-                <CardMedia className={classes.media} style={{ backgroundImage: 'url(https://visitorlando.widen.net/content/mdw0wxwqjb/jpeg/188815-table2.jpg?position=c&crop=true&color=ffffff&quality=80&w=1920&h=1252)' }} title='prabandak' />
-                <Typography className={classes.title} variant="h5" component="h2">prabandak Hotel</Typography>
+                <CardMedia className={classes.media} style={{ backgroundImage: 'url(https://visitorlando.widen.net/content/mdw0wxwqjb/jpeg/188815-table2.jpg?position=c&crop=true&color=ffffff&quality=80&w=1920&h=1252)' }} title='Rhinospot and Kalij' />
+                <Typography className={classes.title} variant="h5" component="h2">Rhinospot and Kalij Hotel</Typography>
                 <Typography className={classes.detail} variant="h5" component="h2">Home - Food</Typography>
             </div>
             <div className={classes.search}>
                 <div className={classes.foodResult}>Showing {foodLength} foods</div>
                 <TextField
                     id="foodSearch"
-                    placeholder="Search in Prabandak"
+                    placeholder="Search in Rhinospot and Kalij Hotel"
                     onChange={handletitle}
                     className={classes.textFieldSearch}
                     focused

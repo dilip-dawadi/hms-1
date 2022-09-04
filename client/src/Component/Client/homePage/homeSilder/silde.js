@@ -38,23 +38,34 @@ function Slider() {
           margin: '0px',
         }}>
           <div style={{
-            backgroundImage: 'url(/prabandhak.png)',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-            height: '100%',
+            display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh',
+            backgroundColor: 'rgba(256, 256, 256, 0.1)',
+            padding: '10px',
+            borderRadius: '20px',
+            backgroundImage: `url('/commingsoon.gif')`,
             width: '100%',
+            objectFit: 'contain',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+            margin: 'auto',
           }} >
-            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '20px', height: '60vh' }}><CircularProgress style={{
-              position: 'absolute',
-              top: '50%',
-              left: '50%',
-              transform: 'translate(-50%, -50%)',
-              height: '50px',
-              width: '50px',
-              color: 'white',
-              zIndex: '999',
-            }} /></div></div></Grid> :
+            <div style={window.innerWidth > 450 ? {
+              color: 'rgb(0,67,77)',
+              fontSize: '24px',
+              fontWeight: 'bold',
+              letterSpacing: '3px',
+              display: "block",
+              marginTop: '370px',
+              zIndex: '1',
+            } : {
+              color: 'rgb(0,67,77)',
+              fontSize: '20px',
+              fontWeight: 'bold',
+              letterSpacing: '3px',
+              display: "block",
+              marginTop: '370px',
+              zIndex: '1',
+            }}>Please wait, loading...</div></div></Grid> :
           <>
             <AutoPlaySwipeableViews
               axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}

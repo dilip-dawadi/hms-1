@@ -29,7 +29,7 @@ const Loading = () => {
           points="20,30 40, 0 0, 50"
         />
         <text fill="#fff" x="0" y="28.5">
-          PRABANDAK
+          RhinospotnKalij
         </text>
       </svg>
     </div>
