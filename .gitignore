@@ -7,7 +7,7 @@
 # .env
 # testing
 /coverage
-/prabandhakbackend
+/server
 # production
 # /build
 

@@ -1,4 +1,4 @@
-import foodPage from "../models/foodpage.js";
+import foodPage from "../models/foodPage.js";
 
 // Filter, sorting and paginating
 
