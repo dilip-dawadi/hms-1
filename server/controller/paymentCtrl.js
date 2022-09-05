@@ -1,6 +1,6 @@
 import paymentPage from '../models/paymentPage.js';
 import Users from '../models/user.js';
-import foodPage from '../models/foodpage.js';
+import foodPage from '../models/foodPage.js';
 
 export const getPayments = async (req, res) => {
     try {

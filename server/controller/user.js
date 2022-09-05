@@ -1,8 +1,6 @@
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
-import mongoose from "mongoose";
 import User from "../models/user.js";
-import foodPage from "../models/foodPage.js";
 import verifyUser from "../models/valideUser.js";
 import { sendEmail } from "../Utils/nodemailer.js";
 export const getUsers = async (req, res) => {
