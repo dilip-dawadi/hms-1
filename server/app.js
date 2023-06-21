@@ -12,6 +12,7 @@ import homePageRoutes from "./routes/homePage.js";
 import foodPageRoutes from "./routes/foodPage.js";
 import paymentRoutes from "./routes/payment.js";
 import morgan from "morgan";
+import InitialRoute from "./routes/index.js";
 
 const app = express();
 
@@ -27,9 +28,7 @@ app.use("/payment", paymentRoutes);
 app.use("/api/rooms", roomRoutes);
 app.use("/api/booked/rooms", roomBookRoute);
 app.use("/api/contact", contactUs);
-app.get("/", (req, res) => {
-  res.send("Hello this is HMS");
-});
+InitialRoute(app);
 
 // Using morgan for dev dependancy
 // if (process.env.NODE_ENV === "development") {
@@ -48,6 +47,6 @@ mongoose
     useUnifiedTopology: true,
   })
   .then(() => app.listen(PORT, console.log(`Server running ${PORT}`)))
-  .catch(error => console.log(error));
+  .catch((error) => console.log(error));
 
 export default app;

@@ -1,14 +1,13 @@
-
 import { initializeApp } from "firebase/app";
 import { getStorage } from "firebase/storage";
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_API_KEY,
-  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
-  projectId: process.env.REACT_APP_PROJECT_ID,
+  apiKey: "AIzaSyB0GRpNjbn_s0UhrxUDYwF8y5jI9yhI4_I",
+  authDomain: "hms-agile.firebaseapp.com",
+  projectId: "hms-agile",
   storageBucket: "hms-agile.appspot.com",
-  messagingSenderId: process.env.REACT_APP_SENDER,
-  appId: process.env.REACT_APP_APP_ID,
-  measurementId: process.env.REACT_APP_MEASUREMENT_ID
+  messagingSenderId: "757259849181",
+  appId: "1:757259849181:web:2f1090eaa316057f5eba34",
+  measurementId: "G-12PHZTF98X",
 };
 const app = initializeApp(firebaseConfig);
 

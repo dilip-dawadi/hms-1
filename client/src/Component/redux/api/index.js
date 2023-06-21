@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = axios.create({ baseURL: "https://rhino.up.railway.app/" });
+const API = axios.create({ baseURL: "https://kalijfarm.up.railway.app/" });
 
 API.interceptors.request.use(req => {
   if (localStorage.getItem("profile")) {
